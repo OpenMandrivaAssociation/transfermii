@@ -1,9 +1,14 @@
 %define name transfermii
-%define version 0.5
-%define beta rc2
+%define version 0.5.2
+%define beta 0
 %define rel 1
+%if %{beta}
 %define release %mkrel 0.%{beta}.%{rel}
 %define distname %{name}-%{version}-%{beta}
+%else
+%define release %mkrel %{rel}
+%define distname %{name}-%{version}
+%endif
 
 Summary: Transfer miis to/from a Nintendo wiimote
 Name: %{name}
