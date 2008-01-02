@@ -18,6 +18,7 @@ Source0: %{distname}.tar.bz2
 License: GPL
 Group: System/Kernel and hardware
 Url: http://www.stacktic.org/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: cwiid-devel gtk+2-devel
 
 %description
