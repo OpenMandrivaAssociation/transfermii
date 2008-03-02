@@ -1,5 +1,5 @@
 %define name transfermii
-%define version 0.5.2
+%define version 0.6
 %define beta 0
 %define rel 1
 %if %{beta}
@@ -14,7 +14,7 @@ Summary: Transfer miis to/from a Nintendo wiimote
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{distname}.tar.bz2
+Source0: %{distname}.tgz
 License: GPL
 Group: System/Kernel and hardware
 Url: http://www.stacktic.org/
