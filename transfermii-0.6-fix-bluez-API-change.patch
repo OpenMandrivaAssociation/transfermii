@@ -1,0 +1,12 @@
+diff -Naur transfermii-0.6/cwiid/bluetooth.c transfermii-0.6-fix-bluez-API-change/cwiid/bluetooth.c
+--- transfermii-0.6/cwiid/bluetooth.c	2008-02-04 18:49:04.000000000 +0100
++++ transfermii-0.6-fix-bluez-API-change/cwiid/bluetooth.c	2009-03-03 12:29:52.000000000 +0100
+@@ -122,7 +122,7 @@
+ 		}
+ 
+ 		/* timeout (10000) in milliseconds */
+-		if (hci_remote_name(sock, &dev_list[i].bdaddr, BT_NAME_LEN,
++		if (hci_read_remote_name(sock, &dev_list[i].bdaddr, BT_NAME_LEN,
+ 		                    (*bdinfo)[bdinfo_count].name, 10000)) {
+ 			cwiid_err(NULL, "Bluetooth name read error");
+ 			err = 1;
