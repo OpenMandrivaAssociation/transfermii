@@ -48,3 +48,34 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc README
 %{_bindir}/%{name}_*
+
+
+%changelog
+* Sun Sep 20 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.6-3mdv2010.0
++ Revision: 445548
+- rebuild
+
+* Tue Mar 03 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.6-2mdv2009.1
++ Revision: 347734
+- rebuild for latest bluez libs
+- fix bluez libs API changes
+- fix GUI building
+- use proper opts flags
+
+* Sun Mar 02 2008 Olivier Blin <oblin@mandriva.com> 0.6-1mdv2008.1
++ Revision: 177635
+- 0.6
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Wed Aug 22 2007 Olivier Blin <oblin@mandriva.com> 0.5.2-1mdv2008.0
++ Revision: 69150
+- 0.5.2
+
+* Fri Apr 20 2007 Olivier Blin <oblin@mandriva.com> 0.5-0.rc2.1mdv2008.0
++ Revision: 15752
+- initial Mandriva release
+- Create transfermii
+
