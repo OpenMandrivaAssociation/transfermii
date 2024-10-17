@@ -16,7 +16,7 @@ Release:    %{release}
 Summary:    Transfer miis to/from a Nintendo wiimote
 License:    GPL
 Group:      System/Kernel and hardware
-Url:        http://www.stacktic.org/
+Url:        https://www.stacktic.org/
 Source0:    %{distname}.tgz
 Patch:      transfermii-0.6-fix-bluez-API-change.patch
 BuildRequires: cwiid-devel
