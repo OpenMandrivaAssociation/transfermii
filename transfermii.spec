@@ -19,6 +19,7 @@ Group:      System/Kernel and hardware
 Url:        https://www.stacktic.org/
 Source0:    %{distname}.tgz
 Patch:      transfermii-0.6-fix-bluez-API-change.patch
+BuildRequires:	make
 BuildRequires: cwiid-devel
 BuildRequires: gtk+2-devel
 BuildRoot:     %{_tmppath}/%{name}-%{version}
