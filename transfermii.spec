@@ -3,10 +3,10 @@
 %define beta 0
 %define rel 3
 %if %{beta}
-%define release %mkrel 0.%{beta}.%{rel}
+%define release 0.%{beta}.%{rel}.1
 %define distname %{name}-%{version}-%{beta}
 %else
-%define release %mkrel %{rel}
+%define release %{rel}.1
 %define distname %{name}-%{version}
 %endif
 
